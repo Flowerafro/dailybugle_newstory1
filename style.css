@@ -1,0 +1,200 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900');
+
+/*********************************************************************************/
+/*    DOM styling and fonts                                                      */
+/*********************************************************************************/
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    color: #39454b;
+    border-bottom: 1px solid #A3C1AD;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/*********************************************************************************/
+/*    Header                                                                     */
+/*********************************************************************************/
+
+header {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #0000;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.20);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+
+/*********************************************************************************/
+/*    section parallax                                                           */
+/*********************************************************************************/
+.section__parallax {
+    width: 100%;
+}
+.parallax-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+  }
+
+  .header__box {
+    color: white;
+    font-size: 1.5rem;
+    backdrop-filter: blur(30px);
+    padding: 1rem 2rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .img1 {
+    min-height: 80vh;
+    background-image: url(/IMG/study1.png);
+  }
+  .img2 {
+    min-height: 80vh;
+    background-image: url(/IMG/study2.png);
+  }
+
+/*********************************************************************************/
+/*    section : text box                                                         */
+/*********************************************************************************/
+
+.text__box {
+    width: 100%;
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-size: 1.5rem; 
+}
+
+.intro{
+    padding: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.content, .finish {
+    padding: 1rem;
+    line-height: 2.5rem;
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+}
+
+.strong {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+
+.blockquote {
+    padding: 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #39454b;
+} 
+
+
+/*********************************************************************************/
+/*    footer                                                                     */
+/*********************************************************************************/
+
+footer {
+    margin: 0;
+    padding: 1rem;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #39454b;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/*********************************************************************************/
+/*    Media Queries                                                              */
+/*********************************************************************************/
+
+/* mobile */
+@media screen and (max-width: 640px) {
+
+    header {
+        justify-content: center;
+    }
+    h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .text__box {
+        padding: 1rem;
+    }
+
+    ..parallax-container{
+        background-size: cover;
+    }
+
+    .header__box {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .intro, .content, .finish {
+        padding: 1rem;
+        line-height: 2rem;
+    }
+
+    .content, .finish {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
