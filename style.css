@@ -91,6 +91,10 @@ header {
   }
   .img2 {
     min-height: 80vh;
+    background-image: url(/IMG/student.png);
+  }
+  .img3 {
+    min-height: 80vh;
     background-image: url(/IMG/study2.png);
   }
 
