@@ -84,18 +84,15 @@ header {
     margin: 0;
     width: 100%;
     text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
   .img1 {
     min-height: 80vh;
-    background-image: url(/IMG/study1.png);
+    background-image: url("IMG/study1.png");
   }
   .img2 {
     min-height: 80vh;
-    background-image: url(/IMG/student.png);
-  }
-  .img3 {
-    min-height: 80vh;
-    background-image: url(/IMG/study2.png);
+    background-image: url("IMG/study2.png");
   }
 
 /*********************************************************************************/
@@ -114,25 +111,34 @@ header {
     font-size: 1.5rem; 
 }
 
+#crazy {
+    color: #39454b;
+    font-weight: 900;
+    font-size: 2rem;
+}   
+
 .intro{
     padding: 2rem;
-    line-height: 2rem;
+    line-height: 5rem;
     text-align: center;
     letter-spacing: 1px;
 }
 
 .content, .finish {
     padding: 1rem;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     text-align: left;
     max-width: 900px;
     width: 100%;
 }
 
 .strong {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1rem;
     text-align: left;
+    margin-top: 2rem;
+    padding-left: 19rem;
+    padding-right: 10rem;
 }
 
 
@@ -180,7 +186,7 @@ footer {
         padding: 1rem;
     }
 
-    ..parallax-container{
+    .parallax-container{
         background-size: cover;
     }
 
